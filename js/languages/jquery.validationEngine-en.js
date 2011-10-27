@@ -106,7 +106,15 @@
                 },
                 "onlyLetterNumber": {
                     "regex": /^[0-9a-zA-Z]+$/,
+                    "alertText": "* No special characters or space allowed"
+                },
+                "onlyLetterNumberSp": {
+                    "regex": /^[0-9a-zA-Z\ \']+$/,
                     "alertText": "* No special characters allowed"
+                },
+                "youtubePlaylist": {
+                    "regex": /^http:\/\/www.youtube.com\/view_play_list\?p=[0-9a-zA-Z]+$/,
+                    "alertText": "* Invalid Youtube Playlist URL"
                 },
                 // --- CUSTOM RULES -- Those are specific to the demos, they can be removed or changed to your likings
                 "ajaxUserCall": {
